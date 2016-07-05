@@ -1,0 +1,108 @@
+* {
+
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+section {
+  height: 800px;
+  width: 100%
+}
+
+#home {
+  background: url(Images/sierras-background.jpg) no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+header {
+  position:fixed;
+  background-color: rgba(163, 144, 180, .6);
+  height: 80px;
+  width: 100%;
+  z-index: 2;
+}
+
+ul.menu {
+
+  float: right;
+
+}
+
+nav li {
+  display: inline-block;
+
+}
+
+a{
+  font-family: 'Open Sans', sans-serif;
+  text-decoration: none;
+  color: white;
+}
+
+h3 {
+  color: black;
+}
+
+h1{
+  position: relative;
+  width: 50%;
+  font-family: Bungee;
+  color: white;
+  font-size: 5em;
+  z-index: 3;
+}
+
+.hero{
+  position: relative;
+  z-index: 1;
+  width: 600px;
+  margin: auto;
+  background-color: blue;
+  text-align: center;
+}
+
+.section-wrapper{
+  height: 720px;
+  background-color: grey;
+}
+
+
+.bio {
+  position: relative;
+  height:720px;
+  width: 70%;
+  float: right;
+  background-color: #d6a65c;
+}
+
+.resume_bar{
+  position: relative;
+  padding: 50px;
+  height: 720px;
+  width: 30%;
+  float: left;
+  background-color: white;
+  align-content: center;
+}
+
+
+#headphoto {
+  width: 200px;
+  height: auto;
+
+}
+
+.gallery-wrap{
+  text-align: center;
+}
+
+li.proj-box {
+  display: inline-block;
+  padding-top: 200px;
+  width: 20%;
+  margin: 1em;
+  height: 500px;
+  background-color: grey;
+}
