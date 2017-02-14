@@ -111,13 +111,15 @@
           <section id="contact-form" class="contact-form">
             <h2>Currently accepting work!</h2>
               <p>Send me a note...</p>
-              <form>
+              <form action="https://formspree.io/caseymetz@gmail.com" method="POST">
                 <label>Name:<br>
                   <input type="text" name="name">
                 </label><br>
                 <label>Email:<br>
-                  <input type="email" name="email">
+                  <input type="email" name="_replyto">
                 </label><br>
+                <input type="text" name="_gotcha" style="display:none">
+                <input type="hidden" name="_subject" value="New submission!" />
                 <textarea name="contact" placeholder="(Your message here.)"></textarea><br>
                 <button type="submit">Send Message</button>
               </form>
