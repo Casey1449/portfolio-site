@@ -4,7 +4,9 @@
     <head>
       <meta charset="utf-8" />
       <title>Casey Metz</title>
-<link href='https://fonts.googleapis.com/css?family=Poppins:400,300|Open+Sans|Raleway:400,200' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=Poppins:400,300|Open+Sans|Raleway:400,200' rel='stylesheet' type='text/css'>
+      <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>
+
       <link rel="stylesheet" type="text/css" href="Styles/reset.css">
       <link rel="stylesheet" type="text/css" href="main.css">
       <!--[if lt IE 9]>
@@ -40,22 +42,33 @@
 
 <!--Begin About Page-->
       <section id="about">
-        <h1>About</h1>
+        <div class="about-header">
+          <h1>About</h1>
+       </div>
           <article class="bio">
             <p>I'm a web developer living in Denver. My interests span the front end, from designing perfect wireframes to developing powerful webapps.</p>
-            <p>I believe the web should be:<p>
+            <p>I believe the webapps and software should be:<p>
               <ul>
                 <li>Beautiful</li>
-                <li>Useable</li>
-                <li>Compatible</li>
+                <li>Useful</li>
                 <li>Responsive</li>
                 <li>Accessible</li>
               </ul>
-            <p>It's my goal to make delightful and helpful web things that meet these standards.</p>
+            <p>It's my goal to build delightful and helpful things that meet these standards.</p>
+            <p>Some of the technologies I like to use are:</p>
+
           </article>
-        <!-- <div class = "down-arrows" id = "about-to-projects">
-          <a href=#projects><img src="Images/buttons/down-arrow.svg" alt="Down to Projects"></a>
-        </div> -->
+          <div class="tech-icons">
+            <span class="devicons devicons-html5"/>
+            <span class="devicons devicons-css3" />
+            <span class="devicons devicons-sass"/>
+            <span class="devicons devicons-javascript"/>
+            <span class="devicons devicons-react"/>
+            <span class="devicons devicons-nodejs"/>
+            <span class="devicons devicons-jquery"/>
+            <span class="devicons devicons-ember"/>
+            <span class="devicons devicons-firebase"/>
+          </div>
       </section>
 <!--End About Page-->
 
@@ -64,27 +77,35 @@
         <h1>Projects</h1>
           <div id="gallery-wrap">
             <div class= "proj-boxes" id="proj1">
-              <h3>Number Guesser</h3>
+              <div class="proj-layer">
+                <h3>Number Guesser</h3>
                 <p>An interactive guessing game, built from scratch using pure JavaScript.</p>
                 <a href = "https://github.com/Casey1449/Number-Guesser"><p>View the github repo</p></a>
             </div>
+          </div>
             <div class= "proj-boxes" id="proj2">
+              <div class="proj-layer">
               <h3>Color Changer</h3>
                 <p>A random color generator, done as a 24-solo project.</p>
                 <a href = "https://github.com/Casey1449/Color-Changer"><p>View the github repo</p></a>
                 <a href = "https://casey1449.github.io/Color-Changer/"><p>View the site</p></a>
+              </div>
             </div>
             <div class= "proj-boxes" id="proj3">
+              <div class="proj-layer">
               <h3>Idea Box</h3>
                 <p>An app for recording, saving, upvoting, and sorting your brilliant ideas.</p>
                 <a href = "https://github.com/kerr89/idea-box"><p>View the github repo</p></a>
                 <a href = "https://kerrd89.github.io/idea-box/"><p>View the app</p></a>
+              </div>
             </div>
             <div class= "proj-boxes" id="proj4">
+              <div class="proj-layer">
               <h3>Raiders of the Lost Arkanoid</h3>
                 <p>A pure javascript clone of the 1970s Atari classic!</p>
                 <a href = "https://github.com/Casey1449/Game-Time"><p>View the github repo</p></a>
                 <a href = "https://casey1449.github.io/Game-Time/"><p>Play the game</p></a>
+              </div>
             </div>
           <div>
         <!-- <div class = "down-arrows" id = "projects-to-contact">
@@ -127,7 +148,7 @@
 
       <footer>
         <ul class="social-media">
-          <li><img src="Images/icons/footer_resume.svg" alt="resume icon" title="resume"></li>
+          <li><img class="resume" src="Images/icons/footer_resume.svg" alt="resume icon" title="resume"></li>
           <li><img src="Images/icons/github.svg" alt="github icon" title="github"/></li>
           <li><img src="Images/icons/linkedin.svg" alt="linkedin icon" title="linkedin"/></li>
           <li><img src="Images/icons/twitter.svg" alt="twitter icon" title="twitter"/></li>

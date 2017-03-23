@@ -22,6 +22,10 @@ section h1 {
   font-size: 5em;
 }
 
+.devicons {
+  font-size: 60px;
+}
+
 h1 {
   font-family: 'Raleway', sans-serif;
   position: relative;
@@ -108,18 +112,27 @@ textarea {
   text-align: center;
 }
 
-
+.about-header {
+  text-align: center;
+}
 
 .bio {
+  padding-left: 15%;
+  text-align: center;
+  padding-right: 20%;
   text-transform: none;
   font-family: 'Open Sans', sans-serif;
   margin: 35px;
-  font-size: 1em;
-  line-height: 1.5em;
+  font-size: 1.1em;
+  line-height: 1.4em;
+}
+
+.bio p, .bio ul {
+  margin-bottom: 15px;
 }
 
 #projects {
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   background-color: lightgrey;
   text-decoration: none;
 }
@@ -130,24 +143,47 @@ textarea {
   justify-content: center;
 }
 
-.proj-boxes {
-  display: inline-block;
+.proj-layer {
+  padding: 15px;
+  transition-duration: .4s;
+  transition-timing-function: ease;
+  transition-property: all;
+  background-color: white;
+  z-index: 100;
+  opacity: 0;
+  transition: opacity .2s linear;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.proj-boxes, .proj-layer {
   height: 475px;
   width: 250px;
-  margin: 25px;
   text-align: center;
   color: black;
   font-size: 1em;
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
-  text-transform: none;
-  box-shadow: 0 0 10px rgba(0,0,0,0.6);
   transition-duration: .2s;
   transition-timing-function: ease;
+
+}
+
+  .proj-boxes {
+  box-shadow: 0 0 10px rgba(0,0,0,0.6);
+  margin: 25px;
 }
 
 .proj-boxes:hover {
   transform: scale(1.1);
+}
+
+.proj-layer:hover {
+  width: 275;
+  height: 522;
+  opacity: .9
 }
 
 
@@ -156,17 +192,17 @@ textarea {
   background-position: center;
   background-size: cover;
 }
-.proj-boxes h3 {
+/*.proj-layer h3 {
   margin: 30px;
 }
 
-.proj-boxes p {
+.proj-layer p {
   margin-bottom: 20px;
 }
 
-.proj-boxes a {
+.proj-layer a {
   text-decoration: none;
-}
+}*/
 
 #proj2 {
   background-image: url(Images/color-changer.png);
@@ -234,12 +270,21 @@ textarea {
 }
 
 footer{
-  display: flex;
   position: absolute;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   bottom: 0px;
   width: 100%;
   height: 150px;
   background-color: black;
+}
+
+footer ul{
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  align-items: center;
 }
 
 footer li{
